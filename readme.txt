@@ -46,7 +46,9 @@ New stylesheet replaces the stylesheet in the Genesis Agent Profiles plugin. If 
 
 Agent Archive Page: 
 
-Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc).
+Removed pagination - it now shows up to 999 agents per page.
+
+Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc). If you would like to sort them differently than the default Order attribute, you’ll find a handy piece of code on my website for that. You can sort randomly, by title (agent name), or date added - just to name a few.
 
 Featured Agent Widget:
 

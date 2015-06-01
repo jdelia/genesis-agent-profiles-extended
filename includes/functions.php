@@ -109,3 +109,22 @@ function do_agent_details_archive() {
     return $output;
 }
 
+// Allow for all agents on one page up to 999
+
+add_action( 'pre_get_posts', 'aeprofiles_change_sort_order_extended', 15 );
+
+function aeprofiles_change_sort_order_extended( $query ) {
+  
+
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  
+    if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'aeprofiles' ) || is_tax() ) {
+
+        $query->set( 'orderby', 'menu_order' );
+        $query->set( 'order', 'ASC' );
+        $query->set( 'paged', $paged );
+        $query->set( 'posts_per_page', '999' );
+    } 
+}
+
+
