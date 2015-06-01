@@ -373,7 +373,7 @@
     }
     .archive-aeprofiles .agent-wrap {
         width: 48%;
-        margin: 0 0 34px 0;
+        margin: 0 15px 15px 0;
         padding: 15px;
     }
     .archive-aeprofiles .agent-wrap:nth-child(odd) {
@@ -387,7 +387,7 @@
     }
     .archive-aeprofiles .agent-wrap {
         width: 100%;
-        margin: 0 0 34px 0;
+        margin: 0 0 15px 0;
         padding: 15px;
     }
      .archive-aeprofiles .agent-wrap img {
