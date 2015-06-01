@@ -1,0 +1,423 @@
+/* ====== Structure ====== */
+
+
+.archive-aeprofiles .archive-description {
+    padding: 20px;
+}
+
+.archive-agent-wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.archive-aeprofiles .agent-wrap {
+    border: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.archive-aeprofiles .archive-description {
+    margin-bottom: 0;
+}
+
+.agent-details {
+    float: none;
+    position: relative;
+}
+
+.single-aeprofiles .agent-details,
+.archive-aeprofiles .agent-details {
+    position: relative;
+    height: auto;
+}
+
+.agent-social-profiles {
+    margin-top: 10px;
+}
+
+.archive-aeprofiles .fn {
+    font-size: 1em;
+}
+
+.archive-aeprofiles .agent-social-profiles {
+    display: none;
+}
+
+.single-aeprofiles .agent-bio {
+    clear: both;
+    padding-top: 30px;
+}
+
+.archive-aeprofiles .agent-details p {
+    font-size: .8em;
+    line-height: 150%;
+    padding: 0;
+    margin: 0;
+}
+
+.single-aeprofiles .agent-details p {
+    font-size: 1em;
+    line-height: 120%;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.single-aeprofiles p.title {
+    font-weight: 700;
+}
+
+.single-aeprofiles .connected-agent-listings h3 {
+    margin: 0 0 10px;
+}
+
+.single-aeprofiles .one-third {
+    float: left;
+    margin: 0 0 20px;
+    width: 31%;
+    padding-left: 3%;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.single-aeprofiles .one-third.first {
+    clear: both;
+    padding-left: 0;
+}
+
+.single-aeprofiles .listing-price {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+    background: none;
+    color: inherit;
+}
+
+.single-aeprofiles .listing-beds,
+.single-aeprofiles .listing-baths {
+    width: 48%;
+    float: left;
+}
+
+.single-aeprofiles .listing-baths {
+    float: right;
+}
+
+.single-aeprofiles span[class*="label-"] {
+    font-weight: 700;
+}
+/* ====== Structure (single listing if connected) ====== */
+
+.single-listing .connected-agents {
+    background: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.single-listing .connected-agents h5,
+.single-listing .connected-agents p {
+    font-size: 85%;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+/* Hide website and address */
+
+.single-listing .connected-agents .website,
+.single-listing .connected-agents .adr {
+    display: none;
+}
+/* ====== Hyperlinks ====== */
+
+.archive-aeprofiles a.fn {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.archive-aeprofiles a,
+.archive-aeprofiles a:hover,
+.single-aeprofiles .agent-details a,
+.single-aeprofiles .agent-details a:hover,
+.agent-social-profiles a:hover,
+.agent-social-profiles a:active {
+    text-decoration: none;
+}
+
+.agent-social-profiles a {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+/* ====== Icon font ====== */
+
+@font-face {
+  font-family: 'fontello-gap';
+  src: url('icons/fontello-gap.eot?50594400');
+  src: url('icons/fontello-gap.eot?50594400#iefix') format('embedded-opentype'),
+       url('icons/fontello-gap.woff?50594400') format('woff'),
+       url('icons/fontello-gap.ttf?50594400') format('truetype'),
+       url('icons/fontello-gap.svg?50594400#fontello-gap') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello-gap';
+    src: url('../font/fontello-gap.svg?50594400#fontello-gap') format('svg');
+  }
+}
+*/
+ 
+ .agent-social-profiles [class^="icon-"]:before, .agent-social-profiles [class*=" icon-"]:before {
+  font-family: "fontello-gap";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.agent-social-profiles .icon-gplus:before { content: '\e801'; } /* '' */
+.agent-social-profiles .icon-pinterest:before { content: '\e804'; } /* '' */
+.agent-social-profiles .icon-facebook:before { content: '\e800'; } /* '' */
+.agent-social-profiles .icon-twitter:before { content: '\e802'; } /* '' */
+.agent-social-profiles .icon-linkedin:before { content: '\e803'; } /* '' */
+.agent-social-profiles .icon-youtube:before { content: '\e805'; } /* '' */
+.agent-social-profiles .icon-instagram:before { content: '\e807'; } /* '' */
+
+
+
+
+/* ====== Images ====== */
+
+.single-aeprofiles .agent-wrap img,
+.single-listing .connected-agents img {
+    float: none;
+    border: 3px solid #efefef;
+    display: block;
+    margin: 0 24px 24px 0;
+}
+
+.archive-aeprofiles .agent-wrap img {
+    float:none;
+    margin: 0 auto 24px;
+}
+
+.single-aeprofiles .entry-header img {
+   float:left;
+   margin: 0 24px 24px 0;
+   text-align: left;
+
+}
+
+/* ====== Misc. ====== */
+
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.featured-agent .widget-wrap {
+    overflow: hidden;
+}
+
+.archive-aeprofiles h1.entry-title {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+/* Stop backstretch.js from displaying agent profile photo as background */
+
+.single-aeprofiles .backstretch {
+    display: none;
+}
+
+.archive-aeprofiles .navigation {
+    clear: both;
+}
+/* ====== Widget ====== */
+
+.widget .featured-agent {
+   text-align: center;
+   margin: 0 auto;
+   display: block;
+
+}
+.widget.featured-agent img {
+    width: 200px;
+    height: auto;
+    border: 3px solid #efefef;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.widget.featured-agent p {
+    font-size: 1em;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+}
+
+.widget.featured-agent .agent-social-profiles {
+    position: static;
+    float: left;
+    clear: both;
+}
+
+.widget-agent-details {
+  text-align: center;
+    width: 100%;
+}
+
+.widget-agent-wrap {
+    float: left;
+    clear: left;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #888;
+    border-bottom: 1px solid rgba(00, 00, 00, 0.3);
+    width: 100%;
+    /* word-break: break-word; */
+}
+/* ====== Shortcode ====== */
+
+.shortcode-agent-wrap {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 25px;
+}
+
+.shortcode-agent-wrap img {
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #efefef;
+    -moz-box-shadow: 2px 2px 3px #DDD;
+    -webkit-box-shadow: 2px 2px 3px #DDD;
+    -khtml-box-shadow: 2px 2px 3px #DDD;
+    box-shadow: 2px 2px 3px #DDD;
+    max-width: 100%;
+}
+
+.shortcode-agent-details {
+    float: left;
+    margin-right: 20px;
+}
+
+.shortcode-agent-wrap .fn {
+    font-size: 20px;
+}
+
+.entry-content .shortcode-agent-details p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.shortcode-agent-wrap .agent-social-profiles {
+    float: right;
+    margin: 0;
+}
+/* ====== Responsive ====== */
+
+@media screen and (max-width: 1139px) {
+    .archive-aeprofiles .content {
+        width: 100%;
+    }
+    .archive-aeprofiles .agent-wrap {
+ 
+        padding: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 1023px) {
+    .archive-aeprofiles .content {
+        width: 100%;
+    }
+    .archive-aeprofiles .agent-wrap {
+        width: 48%;
+        margin: 0 0 34px 0;
+        padding: 15px;
+    }
+    .archive-aeprofiles .agent-wrap:nth-child(odd) {
+        clear: both;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .archive-aeprofiles .content {
+        width: 100%;
+    }
+    .archive-aeprofiles .agent-wrap {
+        width: 100%;
+        margin: 0 0 34px 0;
+        padding: 15px;
+    }
+     .archive-aeprofiles .agent-wrap img {
+        width: 200px;
+        margin: 0;
+        padding: 15px;
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .archive-aeprofiles .content {
+        width: 100%;
+    }
+   
+    .archive-aeprofiles .agent-wrap {
+        float: none;
+        text-align: center;
+    }
+    .archive-aeprofiles .agent-details {
+        width: 100%;
+        text-align: center;
+    }
+    .single-aeprofiles .one-third {
+        width: 100%;
+        clear: both;
+        padding: 0;
+    }
+    .single-aeprofiles .one-third img {
+        width: 100%;
+    }
+}
