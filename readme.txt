@@ -34,6 +34,12 @@ Yes. It also requires the Genesis Agent Profiles plugin to be installed and acti
 
 After activating the plugin, check the Agent Archive page, it should appear in four columns on your desktop.
 
+= This plugin adds a new image size of 200 x 200 for the agent’s featured image. If you already have images uploaded, you will need to regenerate your thumbnail images. You can do that by downloading the free plugin ‘Regenerate Thumbnails’ by Viper007Bond in the WordPress.org plugin repo. 
+
+https://wordpress.org/plugins/regenerate-thumbnails/
+
+Install the plugin and activate it. Go to Tools - Regen. Thumbnails. Regenerate all image, or if you prefer you can selectively regenerate the agent thumbnails in the media library by selecting the agents, then in bulk actions, choose Regenerate thumbnails.
+
 = What features have been added? =
 
 New stylesheet replaces the stylesheet in the Genesis Agent Profiles plugin. If you prefer to use your own stylesheet, you can deregister it under Agent Directory under Settings. This deactivates both the original stylesheet and the extended stylesheet. 
