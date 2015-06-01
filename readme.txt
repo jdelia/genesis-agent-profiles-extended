@@ -13,10 +13,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
 
-Added features:
-
-Agent Archive Page: Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc).
-
 Read more about why we created the plugin here along with examples of how to style them: `http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/`.
 
 == Installation ==
@@ -41,6 +37,10 @@ After activating the plugin, check the Agent Archive page, it should appear in f
 = What features have been added? =
 
 New stylesheet replaces the stylesheet in the Genesis Agent Profiles plugin. If you prefer to use your own stylesheet, you can deregister it under Agent Directory under Settings. This deactivates both the original stylesheet and the extended stylesheet. 
+
+Agent Archive Page: 
+
+Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc).
 
 Featured Agent Widget:
 
