@@ -72,5 +72,7 @@ Additional sorts: orderby=date, orderby=ID (post ID #)
 
 
 == Changelog ==
+= 1.01 =
+Updated stylesheet.
 = 1.0 =
 Initial Release.
