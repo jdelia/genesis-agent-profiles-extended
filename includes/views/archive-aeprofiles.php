@@ -48,8 +48,8 @@ function agent_directory_archive_loop() {
 		<?php
 
 		printf('<p><a class="fn" href="%s" itemprop="name">%s</a></p>', get_permalink(), get_the_title() );
-
-		echo do_agent_details_archive();
+        do_action('sjd_agent_details_archive');
+		//echo do_agent_details_archive();
 		
 		//echo do_agent_social();
 

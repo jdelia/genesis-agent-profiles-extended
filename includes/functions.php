@@ -76,11 +76,16 @@ function aep_template_include_extended($template) {
     
     return $template;
 }
+// add a hook for this function
+add_action( 'sjd_agent_details_archive', 'do_agent_details_archive');
 
 function do_agent_details_archive() {
     
     $output = '';
     
+    if (genesis_get_custom_field('_agent_license') != '')
+        $output .= sprintf('<p class="license">%s</p>', genesis_get_custom_field('_agent_license') );
+
     if (genesis_get_custom_field('_agent_title') != '') {
         
         $output.= sprintf('<p class="title" itemprop="jobTitle">%s</p>', genesis_get_custom_field('_agent_title'));
@@ -106,8 +111,9 @@ function do_agent_details_archive() {
         
         $output.= sprintf('<p><a class="website" itemprop="url" href="http://%s">%s</a></p>', genesis_get_custom_field('_agent_website'), 'Visit Website');
     }
-    return $output;
+    echo $output;
 }
+
 
 // Allow for all agents on one page up to 999
 
