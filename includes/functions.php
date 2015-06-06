@@ -1,11 +1,13 @@
 <?php
 /**
-* Class and Function List:
-* Function list:
-* - aep_template_include_extended()
-* - do_agent_details_archive()
-* Classes list:
-*/
+ * Class and Function List:
+ * Function list:
+ * - aep_template_include_extended()
+ * - do_agent_details_archive()
+ * - get_aeprofiles_photo_size()
+ * - aeprofiles_change_sort_order_extended()
+ * Classes list:
+ */
 
 /**
  * Functions for Genesis Agent Profile Extended.
@@ -76,16 +78,16 @@ function aep_template_include_extended($template) {
     
     return $template;
 }
+
 // add a hook for this function
-add_action( 'sjd_agent_details_archive', 'do_agent_details_archive');
+add_action('sjd_agent_details_archive', 'do_agent_details_archive');
 
 function do_agent_details_archive() {
     
     $output = '';
     
-    if (genesis_get_custom_field('_agent_license') != '')
-        $output .= sprintf('<p class="license">%s</p>', genesis_get_custom_field('_agent_license') );
-
+    if (genesis_get_custom_field('_agent_license') != '') $output.= sprintf('<p class="license">%s</p>', genesis_get_custom_field('_agent_license'));
+    
     if (genesis_get_custom_field('_agent_title') != '') {
         
         $output.= sprintf('<p class="title" itemprop="jobTitle">%s</p>', genesis_get_custom_field('_agent_title'));
@@ -114,23 +116,36 @@ function do_agent_details_archive() {
     echo $output;
 }
 
+// Functions returns the size of the photo selected in the Extended Settings admin
+function get_aeprofiles_photo_size() {
+    
+    $options_extended = get_option('plugin_ae_profiles_settings_extended');
+    
+    if (!isset($options_extended['use_square_photo'])) {
+        $options_extended['use_square_photo'] = 0;
+    }
+    
+    $aeprofiles_photo_size = 'agent-profile-photo';
+    if ($options_extended['use_square_photo'] == 1) {
+        $aeprofiles_photo_size = 'agent-profile-photo-square';
+    }
+    return $aeprofiles_photo_size;
+}
 
 // Allow for all agents on one page up to 999
 
-add_action( 'pre_get_posts', 'aeprofiles_change_sort_order_extended', 15 );
+add_action('pre_get_posts', 'aeprofiles_change_sort_order_extended', 15);
 
-function aeprofiles_change_sort_order_extended( $query ) {
-  
-
+function aeprofiles_change_sort_order_extended($query) {
+    
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  
-    if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'aeprofiles' ) || is_tax() ) {
-
-        $query->set( 'orderby', 'menu_order' );
-        $query->set( 'order', 'ASC' );
-        $query->set( 'paged', $paged );
-        $query->set( 'posts_per_page', '999' );
-    } 
+    
+    if ($query->is_main_query() && !is_admin() && is_post_type_archive('aeprofiles') || is_tax()) {
+        
+        $query->set('orderby', 'menu_order');
+        $query->set('order', 'ASC');
+        $query->set('paged', $paged);
+        $query->set('posts_per_page', '999');
+    }
 }
-
 

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: genesis agent profiles, extended
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 0.1.2
+Stable tag: 0.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
 
+Why I wrote this plugin: http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/
 
 
 == Installation ==
@@ -23,6 +24,7 @@ This section describes how to install the plugin and get it working.
 2. Upload the entire `genesis-agent-profiles-extended-plugin` folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. That's it! There is no settings panel for this plugin.
+5. This plugin adds a new image size of 200 x 200 for the agent’s featured image. If you already have images uploaded, you will need to regenerate your thumbnail images. 
 
 == Frequently Asked Questions ==
 

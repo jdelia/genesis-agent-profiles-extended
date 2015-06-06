@@ -17,6 +17,11 @@ function agent_directory_archive_loop() {
   
 	$class = '';
     $i = 4;
+ 
+    $photo_size = get_aeprofiles_photo_size();
+    
+
+
     echo '<div class="archive-agent-wrap">';
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -31,7 +36,9 @@ function agent_directory_archive_loop() {
     $i++;
 
 	$thumb_id = get_post_thumbnail_id();
-	$thumb_url = wp_get_attachment_image_src($thumb_id, 'agent-profile-photo-square', true);
+	$thumb_url = wp_get_attachment_image_src($thumb_id, $photo_size, true);
+
+
 
 	?>
 
@@ -40,8 +47,9 @@ function agent_directory_archive_loop() {
 
 
 		<?php
-			$thumb_id = get_post_thumbnail_id();
-			$thumb_url = wp_get_attachment_image_src($thumb_id, 'agent-profile-photo-square', true);
+			$post_id = get_the_id();
+			$thumb_id = get_post_thumbnail_id( $post_id );
+			$thumb_url = wp_get_attachment_image_src($thumb_id, $photo_size, true);
 			echo '<a href="' . get_permalink() . '"><img src="' . $thumb_url[0] . '" alt="' . get_the_title() . ' photo" class="attachment-agent-profile-photo wp-post-image" itemprop="image" /></a>';
 		?>
 		<div class="agent-details vcard">

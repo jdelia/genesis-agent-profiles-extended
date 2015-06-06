@@ -1,17 +1,17 @@
 # Genesis Agent Profiles Extended
 
-This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
+Extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution.
 
 ## Description
 
-This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
+This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution. The Genesis Agent Profiles plugin is required to use this extended plugin. 
 
-
-
+Why I wrote this plugin: [http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/](http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/)
 
 ## Requirements
  * WordPress 4.0
  * Genesis 2.0
+ * Genesis Agent Profiles plugin 1.2.1
 
 ## Installation
 

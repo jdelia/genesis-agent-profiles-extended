@@ -20,8 +20,11 @@ add_action( 'genesis_entry_content' , 'agent_post_content' ); // HTML5
 add_action( 'genesis_entry_header', 'genesis_do_post_title',10 ); // HTML5
 add_action( 'genesis_entry_header', 'featured_post_image', 8 );
 function featured_post_image() {
-  if ( ! is_singular( 'aeprofiles' ) )  return;
-	the_post_thumbnail('agent-profile-photo-square',array( 'class' => 'aeprofiles' ));
+   
+   $photo_size = get_aeprofiles_photo_size();
+   
+   if ( ! is_singular( 'aeprofiles' ) )  return;
+	the_post_thumbnail( $photo_size, array( 'class' => 'aeprofiles' ));
 }
 
 function agent_post_content() { ?>

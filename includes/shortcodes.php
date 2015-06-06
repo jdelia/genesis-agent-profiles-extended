@@ -43,10 +43,12 @@ function gap_profile_shortcode_extended($atts, $content = null) {
 
     $output = '';
 
+    $photo_size = get_aeprofiles_photo_size();
+
     foreach ( $profiles_array as $post ) : setup_postdata( $post );
 
         $output .= '<div class="shortcode-agent-wrap">';
-        $output .= '<a href="' . get_permalink() . '">' . get_the_post_thumbnail( $post->ID, 'agent-profile-photo-square' ) . '</a>';
+        $output .= '<a href="' . get_permalink() . '">' . get_the_post_thumbnail( $post->ID, $photo_size ) . '</a>';
         $output .= '<div class="shortcode-agent-details"><a class="fn" href="' . get_permalink() . '">' . get_the_title() . '</a>';
         $output .= do_agent_details();
         if (function_exists('_p2p_init') && function_exists('agentpress_listings_init') || function_exists('_p2p_init') && function_exists('wp_listings_init')) {

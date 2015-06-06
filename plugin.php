@@ -13,7 +13,7 @@
  * Plugin Name:       Genesis Agent Profiles Extended
  * Plugin URI:        http://savvyjackiedesigns.com/
  * Description:       Adds functionality to the Genesis Agent Profiles plugin
- * Version:           0.1.2
+ * Version:           0.9.0
  * Author:            Jackie D'Elia
  * Author URI:        http://savvyjackiedesigns.com/
  * Text Domain:       genesis-agent-profiles-extended
@@ -35,7 +35,10 @@ if (!in_array('genesis-agent-profiles/plugin.php', apply_filters('active_plugins
     return;
 }
 
-add_action('after_setup_theme', 'agent_profiles_init_extended');
+    
+
+
+add_action('after_setup_theme', 'agent_profiles_init_extended',999);
 
 /**
  * Initialize Agent Directory.
@@ -46,18 +49,31 @@ add_action('after_setup_theme', 'agent_profiles_init_extended');
  */
 function agent_profiles_init_extended() {
     
+
     define('AEPE_URL', plugin_dir_url(__FILE__));
     define('AEPE_VERSION', '1.0');
     
-    /** Create new featured image size */
+    require_once (dirname(__FILE__) . '/includes/class-aeprofiles-extended.php');
+
+    // Load up the functions we've written
+    require_once (dirname(__FILE__) . '/includes/functions.php');
+    
+    // Load up the functions we've written
+    require_once (dirname(__FILE__) . '/includes/shortcodes.php');
+
+  
+   
+
+/** Create new featured image size */
     add_image_size( 'agent-profile-photo-square', 200, 200, true );
-
-
+   
     /** Enqueues style file if it exists and has not been deregistered */
     add_action('wp_enqueue_scripts', 'add_aep_css_extended',99);
     function add_aep_css_extended() {
         
         $options = get_option('plugin_ae_profiles_settings');
+     
+        
         
         if (!isset($options['stylesheet_load'])) {
             $options['stylesheet_load'] = 0;
@@ -67,11 +83,15 @@ function agent_profiles_init_extended() {
         if (1 == $options['stylesheet_load']) {
             return;
         }
+
+       
         
         // Only load the stylesheet if it has not been deregistered in Genesis Agent Profiles plugin
         $aep_css_path = AEPE_URL . 'aep-extended.css';
         $var = dirname(__FILE__) . '/aep-extended.css';
 
+       
+          
 
         if (file_exists(dirname(__FILE__) . '/aep-extended.css')) {
             
@@ -81,14 +101,12 @@ function agent_profiles_init_extended() {
             wp_enqueue_style('agent-profiles');
         }
     }
-    
-    // Load up the functions we've written
-    require_once (dirname(__FILE__) . '/includes/functions.php');
-    
-    // Load up the functions we've written
-    require_once (dirname(__FILE__) . '/includes/shortcodes.php');
+
+
     
     //Okay we are ready to go!
+// Load up the functions we've written
+
     add_action('widgets_init', 'genesis_agent_profiles_extended_widget', 15);
     
     /**
@@ -99,6 +117,9 @@ function agent_profiles_init_extended() {
     function genesis_agent_profiles_extended_widget() {
         require plugin_dir_path(__FILE__) . '/includes/genesis-agent-profiles-extended-widget.php';
         register_widget('Custom_AgentEvolution_Profiles_Widget');
+          
     }
+    /** Instantiate */
+    $_agent_directory = new Agent_Directory_Extended;
 }
 

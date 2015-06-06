@@ -1,0 +1,2 @@
+<?php
+echo '<a href="http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/" target="_blank"><img src="' . AEPE_URL . 'images/sjd-ad.png" alt="Plugin brought to you by Savvy Jackie Designs"></a>';
