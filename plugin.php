@@ -13,7 +13,7 @@
  * Plugin Name:       Genesis Agent Profiles Extended
  * Plugin URI:        http://savvyjackiedesigns.com/
  * Description:       Adds functionality to the Genesis Agent Profiles plugin
- * Version:           0.9.0
+ * Version:           0.9.2
  * Author:            Jackie D'Elia
  * Author URI:        http://savvyjackiedesigns.com/
  * Text Domain:       genesis-agent-profiles-extended
@@ -57,6 +57,9 @@ function agent_profiles_init_extended() {
 
     // Load up the functions we've written
     require_once (dirname(__FILE__) . '/includes/functions.php');
+
+    // Load up the functions we've written
+    //require_once (dirname(__FILE__) . '/includes/helpers.php');
     
     // Load up the functions we've written
     require_once (dirname(__FILE__) . '/includes/shortcodes.php');

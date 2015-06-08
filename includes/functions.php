@@ -6,6 +6,7 @@
  * - do_agent_details_archive()
  * - get_aeprofiles_photo_size()
  * - aeprofiles_change_sort_order_extended()
+ * - aeprofiles_has_listings()
  * Classes list:
  */
 
@@ -113,6 +114,7 @@ function do_agent_details_archive() {
         
         $output.= sprintf('<p><a class="website" itemprop="url" href="http://%s">%s</a></p>', genesis_get_custom_field('_agent_website'), 'Visit Website');
     }
+    
     echo $output;
 }
 
@@ -147,5 +149,18 @@ function aeprofiles_change_sort_order_extended($query) {
         $query->set('paged', $paged);
         $query->set('posts_per_page', '999');
     }
+}
+
+// checks to see if there are listings for an agent before we display 'View My Listings, etc.'
+function aeprofiles_has_listings($agent_id) {
+    if (function_exists('_p2p_init') && function_exists('agentpress_listings_init') || function_exists('_p2p_init') && function_exists('wp_listings_init')) {
+        
+        global $wpdb;
+        
+        $has_listing = $wpdb->get_results("SELECT p2p_from FROM wp_p2p WHERE p2p_from = $agent_id");
+        
+        return $has_listing;
+    }
+    return null;
 }
 

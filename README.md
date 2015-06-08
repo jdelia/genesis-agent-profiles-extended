@@ -21,7 +21,7 @@ This section describes how to install the plugin and get it working.
 2. Upload the entire `genesis-agent-profiles-extended-plugin` folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. That's it! There is no settings panel for this plugin.
-5. This plugin adds a new image size of 200 x 200 for the agent’s featured image. If you already have images uploaded, you will need to regenerate your thumbnail images. See readme.txt for instructions.
+5. This plugin adds a new image size of 200 x 200 for the agent’s featured image. If you already have images uploaded and want to use the new image size, you will need to regenerate your thumbnail images. See readme.txt for instructions.
 
 ### Upload
 

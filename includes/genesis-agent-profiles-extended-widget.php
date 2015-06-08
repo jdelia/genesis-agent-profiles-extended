@@ -1,14 +1,14 @@
 <?php
 /**
-* Class and Function List:
-* Function list:
-* - AgentEvolution_Profiles_Widget()
-* - widget()
-* - update()
-* - form()
-* Classes list:
-* - Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widget
-*/
+ * Class and Function List:
+ * Function list:
+ * - AgentEvolution_Profiles_Widget()
+ * - widget()
+ * - update()
+ * - form()
+ * Classes list:
+ * - Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widget
+ */
 
 /**
  * This widget displays a featured agent.
@@ -69,7 +69,7 @@ class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widg
         }
         
         $photo_size = get_aeprofiles_photo_size();
-              
+        
         query_posts($query_args);
         
         if (have_posts()):
@@ -81,8 +81,14 @@ class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widg
                 echo '<a href="', get_permalink(), '">', get_the_post_thumbnail($post->ID, $photo_size), '</a>';
                 printf('<div class="widget-agent-details"><a class="fn" href="%s">%s</a>', get_permalink(), get_the_title());
                 echo do_agent_details_archive();
+                
                 if (function_exists('_p2p_init') && function_exists('agentpress_listings_init') || function_exists('_p2p_init') && function_exists('wp_listings_init')) {
-                    echo '<a class="agent-listings-link" href="' . get_permalink() . '#agent-listings">View My Listings</a>';
+                    
+                    // let's see if there are any listings
+                    $has_listings = aeprofiles_has_listings($post->ID);
+                    if (!empty($has_listings)) {
+                        echo '<p><a class="agent-listings-link" href="' . get_permalink() . '#agent-listings">View My Listings</a></p>';
+                    }
                 }
                 
                 echo '</div>';
@@ -110,16 +116,16 @@ class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widg
         $show_number = isset($instance['show_number']) ? absint($instance['show_number']) : 0;
 ?>
 
-			<p>
-				<label for="<?php
+            <p>
+                <label for="<?php
         echo $this->get_field_id('title'); ?>"><?php
         _e('Title:'); ?></label>
-				<input class="widefat" id="<?php
+                <input class="widefat" id="<?php
         echo $this->get_field_id('title'); ?>" name="<?php
         echo $this->get_field_name('title'); ?>" type="text" value="<?php
         esc_attr_e($instance['title']); ?>" />
-			</p>
-			<?php
+            </p>
+            <?php
         echo '<p>';
         echo '<label for="' . $this->get_field_id('post_id') . '">Select an Agent:</label>';
         echo '<select id="' . $this->get_field_id('post_id') . '" name="' . $this->get_field_name('post_id') . '" class="widefat" style="width:100%;">';
@@ -134,27 +140,27 @@ class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widg
         echo '</p>';
 ?>
 
-			<p>
-				<label for="<?php
+            <p>
+                <label for="<?php
         echo $this->get_field_id('show_agent'); ?>"><?php
         _e('Show Agent', 'genesis'); ?>:</label>
-				<select id="<?php
+                <select id="<?php
         echo $this->get_field_id('show_agent'); ?>" name="<?php
         echo $this->get_field_name('show_agent'); ?>">
-					<option value="show_selected" <?php
+                    <option value="show_selected" <?php
         selected('show_selected', $instance['show_agent']); ?>><?php
         _e('Show Agent selected above', 'genesis'); ?></option>
-					<option value="show_random" <?php
+                    <option value="show_random" <?php
         selected('show_random', $instance['show_agent']); ?>><?php
         _e('Show Random', 'genesis'); ?></option>
-					<option value="show_all" <?php
+                    <option value="show_all" <?php
         selected('show_all', $instance['show_agent']); ?>><?php
         _e('Show All', 'genesis'); ?></option>
-				</select>
-			</p>
-	<p><hr></p>
-			<p>if Show Random selected: </p>
-	       
+                </select>
+            </p>
+    <p><hr></p>
+            <p>if Show Random selected: </p>
+           
          <p>
 
          <label for="<?php
@@ -166,50 +172,50 @@ class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widg
         echo $show_number; ?>" size="3" maxlength="2" />
         
         </p>
-			
-		<p><hr></p>
-			<p>if Show All selected: </p>
-	        <p>
-				<label for="<?php
+            
+        <p><hr></p>
+            <p>if Show All selected: </p>
+            <p>
+                <label for="<?php
         echo $this->get_field_id('orderby'); ?>"><?php
         _e('Order By', 'genesis'); ?>:</label>
-				<select id="<?php
+                <select id="<?php
         echo $this->get_field_id('orderby'); ?>" name="<?php
         echo $this->get_field_name('orderby'); ?>">
-					<option value="date" <?php
+                    <option value="date" <?php
         selected('date', $instance['orderby']); ?>><?php
         _e('Date', 'genesis'); ?></option>
-					<option value="title" <?php
+                    <option value="title" <?php
         selected('title', $instance['orderby']); ?>><?php
         _e('Title', 'genesis'); ?></option>
-					<option value="menu_order" <?php
+                    <option value="menu_order" <?php
         selected('menu_order', $instance['orderby']); ?>><?php
         _e('Menu Order', 'genesis'); ?></option>
-					<option value="ID" <?php
+                    <option value="ID" <?php
         selected('ID', $instance['orderby']); ?>><?php
         _e('ID', 'genesis'); ?></option>
-					<option value="rand" <?php
+                    <option value="rand" <?php
         selected('rand', $instance['orderby']); ?>><?php
         _e('Random', 'genesis'); ?></option>
-				</select>
-			</p>
+                </select>
+            </p>
 
-			<p>
-				<label for="<?php
+            <p>
+                <label for="<?php
         echo $this->get_field_id('order'); ?>"><?php
         _e('Sort Order', 'genesis'); ?>:</label>
-				<select id="<?php
+                <select id="<?php
         echo $this->get_field_id('order'); ?>" name="<?php
         echo $this->get_field_name('order'); ?>">
-					<option value="DESC" <?php
+                    <option value="DESC" <?php
         selected('DESC', $instance['order']); ?>><?php
         _e('Descending (3, 2, 1)', 'genesis'); ?></option>
-					<option value="ASC" <?php
+                    <option value="ASC" <?php
         selected('ASC', $instance['order']); ?>><?php
         _e('Ascending (1, 2, 3)', 'genesis'); ?></option>
-				</select>
-			</p>
+                </select>
+            </p>
 
-				<?php
+                <?php
     }
 }

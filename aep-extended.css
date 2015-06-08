@@ -77,6 +77,7 @@
     margin: 0 0 10px;
 }
 
+
 .single-aeprofiles .one-third {
     float: left;
     margin: 0 0 20px;
@@ -228,22 +229,32 @@
 
 .single-aeprofiles .agent-wrap img,
 .single-listing .connected-agents img {
-    float: none;
+    float: left;
     border: 3px solid #efefef;
     display: block;
     margin: 0 24px 24px 0;
 }
 
 .archive-aeprofiles .agent-wrap img {
-    float:none;
+    float: none;
     margin: 0 auto 24px;
 }
 
 .single-aeprofiles .entry-header img {
    float:left;
    margin: 0 24px 24px 0;
-   text-align: left;
+ 
+}
 
+.shortcode-agent-wrap img {
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #efefef;
+    -moz-box-shadow: 2px 2px 3px #DDD;
+    -webkit-box-shadow: 2px 2px 3px #DDD;
+    -khtml-box-shadow: 2px 2px 3px #DDD;
+    box-shadow: 2px 2px 3px #DDD;
+    max-width: 100%;
 }
 
 /* ====== Misc. ====== */
@@ -346,16 +357,7 @@
     margin-bottom: 25px;
 }
 
-.shortcode-agent-wrap img {
-    float: left;
-    margin: 0 10px 10px 0;
-    border: 1px solid #efefef;
-    -moz-box-shadow: 2px 2px 3px #DDD;
-    -webkit-box-shadow: 2px 2px 3px #DDD;
-    -khtml-box-shadow: 2px 2px 3px #DDD;
-    box-shadow: 2px 2px 3px #DDD;
-    max-width: 100%;
-}
+
 
 .shortcode-agent-details {
     float: left;
@@ -405,7 +407,7 @@
     }
     .archive-aeprofiles .agent-wrap {
         width: 48%;
-        margin: 0 15px 15px 0;
+        margin: 0 10px 15px 0;
         padding: 15px;
     }
     .archive-aeprofiles .agent-wrap:nth-child(odd) {
