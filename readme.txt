@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
+This plugin extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
 
 Why I wrote this plugin: http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/
 
