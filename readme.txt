@@ -1,11 +1,11 @@
 ===Genesis Agent Profiles Extended===
 
 Contributors: JDELIA
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GNJE45UUSUDB6
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SHMWYFBDVPYU
 Tags: genesis agent profiles, extended
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,6 +81,15 @@ descending order (3,2,1):
 Additional sorts: orderby=date, orderby=ID (post ID #)
 
 
-== Changelog ==
-= 1.0 =
+==Changelog==
+
+=0.9.3=
+Updated stylesheet to center agent image on mobile phone view when on single agent profile.
+
+=0.9.2=
 Initial Release.
+
+==Upgrade Notice==
+
+= 0.9.3 =
+Corrects format issue when viewing in portrait mode on viewport of 480px or less for single agent.

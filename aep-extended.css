@@ -1,10 +1,11 @@
 /* This stylesheet replaces the stylesheet aep.css in the Genesis Agent Profiles plugin */
-
 /* ====== Structure ====== */
 /* Force full width layout for agent archive page */
-.archive-aeprofiles .content  {
-  width: 100%;
-} 
+
+.archive-aeprofiles .content {
+    width: 100%;
+}
+
 .archive-aeprofiles .archive-description {
     padding: 20px;
 }
@@ -76,7 +77,6 @@
 .single-aeprofiles .connected-agent-listings h3 {
     margin: 0 0 10px;
 }
-
 
 .single-aeprofiles .one-third {
     float: left;
@@ -158,19 +158,14 @@
     margin-right: 5px;
     font-size: 18px;
 }
-
-
 /* ====== Icon font ====== */
 
 @font-face {
-  font-family: 'fontello-gap';
-  src: url('icons/fontello-gap.eot?50594400');
-  src: url('icons/fontello-gap.eot?50594400#iefix') format('embedded-opentype'),
-       url('icons/fontello-gap.woff?50594400') format('woff'),
-       url('icons/fontello-gap.ttf?50594400') format('truetype'),
-       url('icons/fontello-gap.svg?50594400#fontello-gap') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'fontello-gap';
+    src: url('icons/fontello-gap.eot?50594400');
+    src: url('icons/fontello-gap.eot?50594400#iefix') format('embedded-opentype'), url('icons/fontello-gap.woff?50594400') format('woff'), url('icons/fontello-gap.ttf?50594400') format('truetype'), url('icons/fontello-gap.svg?50594400#fontello-gap') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -182,49 +177,70 @@
   }
 }
 */
- 
- .agent-social-profiles [class^="icon-"]:before, .agent-social-profiles [class*=" icon-"]:before {
-  font-family: "fontello-gap";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: none;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+.agent-social-profiles [class^="icon-"]:before,
+.agent-social-profiles [class*=" icon-"]:before {
+    font-family: "fontello-gap";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: none;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.agent-social-profiles .icon-gplus:before { content: '\e801'; } /* '' */
-.agent-social-profiles .icon-pinterest:before { content: '\e804'; } /* '' */
-.agent-social-profiles .icon-facebook:before { content: '\e800'; } /* '' */
-.agent-social-profiles .icon-twitter:before { content: '\e802'; } /* '' */
-.agent-social-profiles .icon-linkedin:before { content: '\e803'; } /* '' */
-.agent-social-profiles .icon-youtube:before { content: '\e805'; } /* '' */
-.agent-social-profiles .icon-instagram:before { content: '\e807'; } /* '' */
 
+.agent-social-profiles .icon-gplus:before {
+    content: '\e801';
+}
+/* '' */
 
+.agent-social-profiles .icon-pinterest:before {
+    content: '\e804';
+}
+/* '' */
 
+.agent-social-profiles .icon-facebook:before {
+    content: '\e800';
+}
+/* '' */
 
+.agent-social-profiles .icon-twitter:before {
+    content: '\e802';
+}
+/* '' */
+
+.agent-social-profiles .icon-linkedin:before {
+    content: '\e803';
+}
+/* '' */
+
+.agent-social-profiles .icon-youtube:before {
+    content: '\e805';
+}
+/* '' */
+
+.agent-social-profiles .icon-instagram:before {
+    content: '\e807';
+}
+/* '' */
 /* ====== Images ====== */
 
 .single-aeprofiles .agent-wrap img,
@@ -241,9 +257,8 @@
 }
 
 .single-aeprofiles .entry-header img {
-   float:left;
-   margin: 0 24px 24px 0;
- 
+    float: left;
+    margin: 0 24px 24px 0;
 }
 
 .shortcode-agent-wrap img {
@@ -256,7 +271,6 @@
     box-shadow: 2px 2px 3px #DDD;
     max-width: 100%;
 }
-
 /* ====== Misc. ====== */
 
 .clearfix:before {
@@ -290,18 +304,17 @@
 /* ====== Widget ====== */
 
 .widget .featured-agent {
-   text-align: center;
-   margin: 0 auto;
-   display: block;
-
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
+
 .widget.featured-agent img {
     width: auto;
     height: 200px;
     border: 3px solid #efefef;
     margin: 0 auto;
     display: block;
-
 }
 
 .widget.featured-agent p {
@@ -318,7 +331,7 @@
 }
 
 .widget-agent-details {
-  text-align: center;
+    text-align: center;
     width: 100%;
     padding: 20px 0;
 }
@@ -329,26 +342,24 @@
     margin: 0 0 20px;
     width: 100%;
     /* word-break: break-word; */
+    
     position: relative;
 }
 
-
 .widget-agent-wrap:after {
-  content: ""; 
-  background: #888; 
-  background: rgba(00, 00, 00, 0.3); 
-  position: absolute; 
-  bottom: 0; 
-  left: 20%;
-  height: 1px; 
-  width: 60%;
+    content: "";
+    background: #888;
+    background: rgba(00, 00, 00, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 1px;
+    width: 60%;
 }
 
 .widget-agent-wrap .fn {
     font-size: 1.5em;
 }
-
-
 /* ====== Shortcode ====== */
 
 .shortcode-agent-wrap {
@@ -356,8 +367,6 @@
     clear: both;
     margin-bottom: 25px;
 }
-
-
 
 .shortcode-agent-details {
     float: left;
@@ -385,20 +394,18 @@
         width: 100%;
     }
     .archive-aeprofiles .agent-wrap {
- 
         padding: 15px;
     }
-    .sidebar .widget-agent-wrap  {
-    width: 100%;
-    display: inline-block;
-    float:none;
-    clear:both;
-    vertical-align: top;
-    min-height: 400px;
-    border-bottom: none;
-    padding: 15px;
-}
-    
+    .sidebar .widget-agent-wrap {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        clear: both;
+        vertical-align: top;
+        min-height: 400px;
+        border-bottom: none;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -412,11 +419,7 @@
     }
     .archive-aeprofiles .agent-wrap:nth-child(odd) {
         clear: both;
-}
-
-
-
-
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -428,30 +431,27 @@
         margin: 0 0 15px 0;
         padding: 15px;
     }
-     .archive-aeprofiles .agent-wrap img {
+    .archive-aeprofiles .agent-wrap img {
         width: 200px;
         margin: 0;
         padding: 15px;
         float: none;
     }
-
     .sidebar .widget-agent-wrap {
-    width: 100%;
-    display: inline-block;
-    float:none;
-    clear:both;
-    vertical-align: top;
-    min-height: 1px;
-    border-bottom: none;
-}
-
+        width: 100%;
+        display: inline-block;
+        float: none;
+        clear: both;
+        vertical-align: top;
+        min-height: 1px;
+        border-bottom: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .archive-aeprofiles .content {
         width: 100%;
     }
-   
     .archive-aeprofiles .agent-wrap {
         float: none;
         text-align: center;
@@ -468,6 +468,9 @@
     .single-aeprofiles .one-third img {
         width: 100%;
     }
-
- 
+    .single-aeprofiles .entry-header img {
+        float: none;
+        margin: 0 auto 24px;
+        display: block;
+    }
 }
