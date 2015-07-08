@@ -139,7 +139,7 @@ Additional sorts: orderby=date, orderby=ID (post ID #)
 ==Changelog==
 
 =0.9.4=
-Updated widget code to use PHP 5 __constructor() as PHP 4 $this->WP_Widget() is deprecated in upcoming release of WordPress 4.3.
+Updated widget code to use PHP 5 __constructor() as PHP 4 $this->WP_Widget() is deprecated in upcoming release of WordPress 4.3. Version bump to 0.9.4 in plugin.php.
 =0.9.3=
 Updated stylesheet to center agent image on mobile phone view when on single agent profile.
 
