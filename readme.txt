@@ -21,6 +21,7 @@ AGENT ARCHIVE PAGE
 
 Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc).
 
+
 FEATURED AGENT WIDGET
 
 Feature one agent, a random agent, a random group of agents or all agents.
