@@ -21,12 +21,13 @@ if (!class_exists('AgentEvolution_Profiles_Widget')) {
     wp_die(sprintf(__('Sorry, you can\'t activate unless you have Genesis Agent Profiles plugin installed and activated')));
 }
 
-class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widget {
+class Custom_AgentEvolution_Profiles_Widget extends AgentEvolution_Profiles_Widget
+{
     
-    function __construct() {
+    function AgentEvolution_Profiles_Widget() {
         $widget_ops = array('classname' => 'featured-agent', 'description' => __('Displays featured agent', 'aep'));
         $control_ops = array('width' => 300, 'height' => 350);
-        parent::__construct('featured-agent', __('Featured Agent', 'aep'), $widget_ops, $control_ops);
+        $this->WP_Widget('featured-agent', __('Featured Agent', 'aep'), $widget_ops, $control_ops);
     }
     
     function widget($args, $instance) {
