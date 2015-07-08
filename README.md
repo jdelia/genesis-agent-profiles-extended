@@ -6,7 +6,7 @@ Extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution.
 
 This plugin extended the capabilities of the Genesis Agent Profiles plugin by AgentEvolution. The Genesis Agent Profiles plugin is required to use this extended plugin. 
 
-Why I wrote this plugin: [http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/](http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/)
+Why I wrote this plugin and what new features are included: [http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/](http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/)
 
 ## Requirements
  * WordPress 4.0
