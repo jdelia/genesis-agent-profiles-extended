@@ -1,0 +1,14 @@
+# files to ignore
+.DS_Store
+*.zip
+*.gz
+genesis-agent-profiles-extended-93/*
+graphics/*
+sublime/*.sublime-workspace
+sublime/*.sublime-project
+# sftp configuration file
+sftp-config.json
+
+# Thumbnails
+._*
+
