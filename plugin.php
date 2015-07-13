@@ -12,8 +12,8 @@
  * @wordpress-plugin
  * Plugin Name:       Genesis Agent Profiles Extended
  * Plugin URI:        http://savvyjackiedesigns.com/
- * Description:       Adds functionality to the Genesis Agent Profiles plugin
- * Version:           0.9.4
+ * Description:       Adds functionality to the Genesis Agent Profiles plugin. Improved shortcode sorting options, random display on page load and 4 column responsive grid layout.
+ * Version:           0.9.5
  * Author:            Jackie D'Elia
  * Author URI:        http://savvyjackiedesigns.com/
  * Text Domain:       genesis-agent-profiles-extended

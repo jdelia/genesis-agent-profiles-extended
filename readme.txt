@@ -5,13 +5,15 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: genesis agent profiles, extended
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
 This plugin extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
+
+Why I wrote this plugin: http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/
 
 NEW STYLESHEET 
 
@@ -56,7 +58,6 @@ To show all agents sorted by menu_order (Order # in Page Attributes for that age
 
 Additional sorts: orderby=date, orderby=ID (post ID #)
 
-Why I wrote this plugin: http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/
 
 NEW AGENT PHOTO SIZE
 
@@ -137,16 +138,19 @@ Additional sorts: orderby=date, orderby=ID (post ID #)
 
 
 ==Changelog==
-
-=0.9.4=
+= 0.9.5 =
+Updated description on WordPress.org plugin page. 
+= 0.9.4 =
 Updated widget code to use PHP 5 __constructor() as PHP 4 $this->WP_Widget() is deprecated in upcoming release of WordPress 4.3. Version bump to 0.9.4 in plugin.php.
-=0.9.3=
+= 0.9.3 =
 Updated stylesheet to center agent image on mobile phone view when on single agent profile.
 
-=0.9.2=
+= 0.9.2 =
 Initial Release.
 
 ==Upgrade Notice==
 
+= 0.9.5=
+Updated code to support upcoming release of WordPress 4.3. Version bump to 0.9.4 in plugin.php.
 = 0.9.3 =
 Corrects format issue when viewing in portrait mode on viewport of 480px or less for single agent.
