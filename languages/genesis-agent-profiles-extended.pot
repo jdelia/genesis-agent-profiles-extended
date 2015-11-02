@@ -1,0 +1,126 @@
+# Copyright (C) 2015 Genesis Agent Profiles Extended
+# This file is distributed under the same license as the Genesis Agent Profiles Extended package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Agent Profiles Extended 0.9.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/genesis-agent-"
+"profiles-extended\n"
+"POT-Creation-Date: 2015-07-16 09:03:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-aeprofiles-extended.php:56
+msgid "Extended Settings"
+msgstr ""
+
+#: includes/class-aeprofiles-extended.php:66
+msgid "Plugin by Savvy Jackie Designs"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:21 plugin.php:33
+msgid ""
+"Sorry, you can't activate unless you have Genesis Agent Profiles plugin "
+"installed and activated"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:27
+msgid "Displays featured agent"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:29
+msgid "Featured Agent"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:121
+msgid "Title:"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:145
+msgid "Show Agent"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:151
+msgid "Show Agent selected above"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:154
+msgid "Show Random"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:157
+msgid "Show All"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:167
+msgid "Max number of agents to show:"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:180
+msgid "Order By"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:186
+msgid "Date"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:189
+msgid "Title"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:192
+msgid "Menu Order"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:195
+msgid "ID"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:198
+msgid "Random"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:205
+msgid "Sort Order"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:211
+msgid "Descending (3, 2, 1)"
+msgstr ""
+
+#: includes/genesis-agent-profiles-extended-widget.php:214
+msgid "Ascending (1, 2, 3)"
+msgstr ""
+
+#: includes/views/aep-settings-extended.php:23
+msgid "Save Settings"
+msgstr ""
+
+#: includes/views/archive-aeprofiles.php:88
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Genesis Agent Profiles Extended"
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Genesis Agent Profiles Extended 0.9.5)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  plugin.pot (Genesis Agent Profiles Extended 0.9.5)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://savvyjackiedesigns.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds functionality to the Genesis Agent Profiles plugin. Improved shortcode "
+"sorting options, random display on page load and 4 column responsive grid "
+"layout."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Jackie D'Elia"
+msgstr ""

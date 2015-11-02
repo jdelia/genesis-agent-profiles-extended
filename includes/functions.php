@@ -64,18 +64,18 @@ function aep_template_include_extended($template) {
             return dirname(__FILE__) . '/views/single-' . $post_type . '.php';
         }
     }
-    
-    if (get_post_type() == 'listing') {
+    // removed due to conflict with listings plugin
+    // if (get_post_type() == 'listing') {
         
-        if (file_exists(get_stylesheet_directory() . '/single-listing.php')) {
+    //     if (file_exists(get_stylesheet_directory() . '/single-listing.php')) {
             
-            return $template;
-        } 
-        else {
+    //         return $template;
+    //     } 
+    //     else {
             
-            return dirname(__FILE__) . '/views/single-listing.php';
-        }
-    }
+    //         return dirname(__FILE__) . '/views/single-listing.php';
+    //     }
+    // }
     
     return $template;
 }

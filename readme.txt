@@ -2,10 +2,10 @@
 
 Contributors: JDELIA
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SHMWYFBDVPYU
-Tags: genesis agent profiles, extended
+Tags: genesis, genesis framework, agent profiles, agent directory, real estate agents, real estate, staff, team, team members, genesis agent profiles, extended, agent evolution, wp listings, agentpress listings 
 Requires at least: 4.0.0
-Tested up to: 4.2.2
-Stable tag: 0.9.5
+Tested up to: 4.3.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,16 +15,16 @@ This plugin extends the capabilities of the Genesis Agent Profiles plugin by Age
 
 Why I wrote this plugin: http://savvyjackiedesigns.com/genesis-agent-profiles-extended-plugin/
 
-NEW STYLESHEET 
+**NEW STYLESHEET**
 
 A new stylesheet replaces the stylesheet in the Genesis Agent Profiles plugin. If you prefer to use your own stylesheet, you can deregister it under Agent Directory under Settings. This deactivates both the original stylesheet and the extended stylesheet.
 
-AGENT ARCHIVE PAGE
+**AGENT ARCHIVE PAGE**
 
 Displays four columns (Desktop viewport 1024px and up) and is responsive. Two columns on viewports less than 1024px (iPad Portrait, etc.) and one column for smaller viewports (iPhone, etc).
 
 
-FEATURED AGENT WIDGET
+**FEATURED AGENT WIDGET**
 
 Feature one agent, a random agent, a random group of agents or all agents.
 
@@ -34,7 +34,7 @@ When displaying all agents, you may choose how they are sorted: random, title, d
 
 Choosing random will shuffle with each page load.
 
-IMPROVED SHORTCODE FUNCTIONALITY
+**IMPROVED SHORTCODE FUNCTIONALITY**
 
 The shortcode [agent_profiles] can now be sorted. Here are some examples of what you can do.
 
@@ -59,12 +59,12 @@ To show all agents sorted by menu_order (Order # in Page Attributes for that age
 Additional sorts: orderby=date, orderby=ID (post ID #)
 
 
-NEW AGENT PHOTO SIZE
+**NEW AGENT PHOTO SIZE**
 
 This plugin adds a new image size of 200px by 200px for the agent’s featured image. It is not selected by default when you activate the plugin. If you already have images uploaded, you will need to regenerate your thumbnail images first.
 
 
-CHANGES IN HOW THE PLUGIN BEHAVES
+**CHANGES IN HOW THE PLUGIN BEHAVES**
 
 If you are using the AgentPress listings plugin or the WP Listings plugin to connect agent listings to their profile:
 
