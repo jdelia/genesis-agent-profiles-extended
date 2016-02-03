@@ -1,6 +1,11 @@
 # Genesis Agent Profiles Extended
 
-Extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution.
+## Development Has Been Discontinued
+
+There will be no further updates to this plugin. The Genesis Agent Profiles plugin is no longer supported by Agent Evolution and since this plugin depends on that, further development of this plugin is no longer an option.  
+
+For compatibility with any WordPress theme, use their new [https://wordpress.org/plugins/impress-agents/](IMPress Agents plugin)
+
 
 ## Description
 

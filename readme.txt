@@ -4,12 +4,22 @@ Contributors: JDELIA
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3SHMWYFBDVPYU
 Tags: genesis, genesis framework, agent profiles, agent directory, real estate agents, real estate, staff, team, team members, genesis agent profiles, extended, agent evolution, wp listings, agentpress listings 
 Requires at least: 4.0.0
-Tested up to: 4.3.1
+Tested up to: 4.4.2
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+
 == Description ==
+
+**DEVELOPMENT DISCONTINUED**
+
+There will be no further updates to this plugin. The Genesis Agent Profiles plugin is no longer supported by Agent Evolution and since this plugin depends on that, further development of this plugin is no longer an option. 
+
+Support for this plugin has ended.
+
+Use this plugin instead: https://wordpress.org/plugins/impress-agents/
+
 
 This plugin extends the capabilities of the Genesis Agent Profiles plugin by AgentEvolution and is required to use this extended plugin. 
 
@@ -138,6 +148,8 @@ Additional sorts: orderby=date, orderby=ID (post ID #)
 
 
 ==Changelog==
+= 1.0.0 =
+Updated to correct a conflict with the AgentPress Listings and WP Listings plugin.
 = 0.9.5 =
 Updated description on WordPress.org plugin page. 
 = 0.9.4 =
@@ -149,7 +161,8 @@ Updated stylesheet to center agent image on mobile phone view when on single age
 Initial Release.
 
 ==Upgrade Notice==
-
+= 1.0.0 =
+Updated to correct a conflict with the AgentPress Listings and WP Listings plugin.
 = 0.9.5=
 Updated code to support upcoming release of WordPress 4.3. Version bump to 0.9.4 in plugin.php.
 = 0.9.3 =
